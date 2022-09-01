@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { isAutheticated } from "../Auth/authhelper";
+import { API } from "../../API";
 
 
 const Userpage = ({ setLoginUser, userData }) => {
@@ -39,7 +40,7 @@ const Userpage = ({ setLoginUser, userData }) => {
             return
         }
 
-        axios.patch("http://localhost:9002/updateProfile", user, {
+        axios.patch(`${API}/updateProfile`, user, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

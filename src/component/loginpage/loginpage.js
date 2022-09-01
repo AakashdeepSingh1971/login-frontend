@@ -3,6 +3,7 @@ import { BsFillEyeSlashFill, BsFillEyeFill } from 'react-icons/bs';
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
+import { API } from "../../API";
 
 
 
@@ -37,7 +38,7 @@ const Loginpage = ({ setLoginUser, userData }) => {
         setPasswordType(!passwordType)
     }
     const login = () => {
-        axios.post("http://localhost:9002/login", user)
+        axios.post(`${API}/login`, user)
             .then(async (res) => {
                 alert(res.data.message)
                 setLoginUser(res.data.user)
