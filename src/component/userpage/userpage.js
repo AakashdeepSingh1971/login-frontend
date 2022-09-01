@@ -46,7 +46,7 @@ const Userpage = ({ setLoginUser, userData }) => {
             },
         })
             .then(async (res) => {
-                alert(res.data.message)
+                // alert(res.data.message)
                 setLoginUser(res.data.user)
                 history.push("/profile")
             })

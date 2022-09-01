@@ -44,7 +44,7 @@ const history = useHistory()
         }
         try {
             const res = await axios.post(`${API}/register`, user)
-            swal("vola!", "Your profile has been created!", "success");
+            swal("voila!", "Your profile has been created!", "success");
             history.push("/login")
         } catch (e) {
             swal("Oh noes!!", " request failed!", "error");

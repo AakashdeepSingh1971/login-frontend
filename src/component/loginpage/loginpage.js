@@ -40,7 +40,7 @@ const Loginpage = ({ setLoginUser, userData }) => {
     const login = () => {
         axios.post(`${API}/login`, user)
             .then(async (res) => {
-                alert(res.data.message)
+                // alert(res.data.message)
                 setLoginUser(res.data.user)
                 await localStorage.setItem(
                     "auth",
