@@ -1,0 +1,87 @@
+*:root {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+h1 {
+    font-size  : 56px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+
+
+
+
+.contact-form {
+    font-size       : 150%;
+    display         : flex;
+    flex-direction  : column;
+    border          : 1px solid #ffffff;
+    border-radius   : 5px;
+    
+}
+
+
+.email {
+
+    width           : 95%;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    border-radius   : 5px;
+    font-size       : 14px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 15px ;
+}
+.pass {
+
+    width           : 75%;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    background-color: #fff;
+    border-radius   : 5px;
+    border          : 1px solid #c1c1c1;
+    font-size       : 14px;
+    font-family: 'Roboto Mono', monospace;
+    
+    border-radius: 15px 0px 0px 15px;
+
+
+}
+.eye {
+
+    width           : 20%;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    background-color: #fff;
+    border-radius   : 5px;
+    border          : 1px solid #c1c1c1;
+    font-size       : 14px;
+    border-radius: 0px 15px 15px 0px;
+
+
+}
+
+.button {
+
+    display        : flex;
+    flex-direction : column;
+    gap            : 10%;
+    justify-content: center;
+    align-items    : center;
+}
+
+.submit-btn {
+    font-size       : medium;
+    align-items     : center;
+    margin-top      : 10px;
+    width           : 100%;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+    border-radius   : 20px;
+    color           : #fff;
+    background-color: rgb(0, 136, 143);
+    border          : none;
+    cursor          : pointer;
+}
