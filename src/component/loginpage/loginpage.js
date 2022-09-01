@@ -58,9 +58,9 @@ const Loginpage = ({ setLoginUser, userData }) => {
 
             <div className="contact-form">
 
-                <label> EMAIL</label>
+                <label className="lable"> EMAIL</label>
                 <input className="email" name="email" value={user.email} type="text" onChange={handleChange} placeholder="Example@gmail.com" />
-                <label > Enter your Password</label>
+                <label className="lable"> Enter your Password</label>
                 <div>
                     <input name="password" value={user.password} type={passwordType ? "password" : "text"} onChange={handleChange} className="pass" placeholder="XXXXXXXX" />
                     <button className="eye" onClick={togglePassword} >
