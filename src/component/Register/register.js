@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import swal from 'sweetalert'
 import axios from "axios"
 import { useHistory } from "react-router-dom";
+import { API } from "../../API";
 
 const Register = ({userData}) => {
 const history = useHistory()
